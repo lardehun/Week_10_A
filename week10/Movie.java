@@ -10,7 +10,8 @@ public class Movie extends Product implements Buyable{
 	int price;
 	
 	
-	public Movie(Genre genre, long duration, double rate, List<Person> cast, int price) {
+	public Movie(Genre genre, long duration, double rate, List<Person> cast, int price, String title,Person person) {
+		super(title,person);
 		this.genre = genre;
 		this.duration = duration;
 		this.rate = rate;

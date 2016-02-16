@@ -19,8 +19,8 @@ public class RentManager {
 		gameStaff2.add(geri);
 		gameStaff2.add(barbi);
 		
-		Product game1 = new Game(true,gameStaff1,100);
-		Product game2 = new Game(false,gameStaff2,200);
+		Product game1 = new Game(true,gameStaff1,100,"TheGame1",jani);
+		Product game2 = new Game(false,gameStaff2,200,"TheGame2",jani);
 		
 		System.out.println(game1.getInvestment());
 		System.out.println(game2.getInvestment());
@@ -42,8 +42,8 @@ public class RentManager {
 		movieCast2.add(moviePerson2);
 		movieCast2.add(moviePerson3);
 		
-		Product movie1 = new Movie(Genre.ACTION,120,99,movieCast1,3000);
-		Product movie2 = new Movie(Genre.ACTION,120,99,movieCast2,3000);
+		Product movie1 = new Movie(Genre.ACTION,120,99,movieCast1,3000,"TheMovie1",moviePerson1);
+		Product movie2 = new Movie(Genre.ACTION,120,99,movieCast2,3000,"TheMovie2",moviePerson2);
 		
 		System.out.println(movie1.getInvestment());
 		System.out.println(movie2.getInvestment());
@@ -56,8 +56,8 @@ public class RentManager {
 		Person bookPerson1 = new Person("Haragosi","Attila",Gender.MALE,10000);
 		Person bookPerson2 = new Person("Haragosi","Péter",Gender.MALE,30100);
 		
-		Product book1 = new Book(bookPerson1);
-		Product book2 = new Book(bookPerson2);
+		Product book1 = new Book("HarryPottera",bookPerson1,bookPerson2);
+		Product book2 = new Book("HarryPottera2",bookPerson2,bookPerson2);
 		
 		System.out.println(book1.getInvestment());
 		System.out.println(book2.getInvestment());

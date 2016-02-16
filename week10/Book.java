@@ -3,8 +3,9 @@ package week10;
 public class Book extends Product{
 	Person author;
 	
-
-	public Book(Person author) {
+	
+	public Book(String title, Person person, Person author) {
+		super(title, person);
 		this.author = author;
 	}
 

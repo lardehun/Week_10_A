@@ -5,6 +5,12 @@ public abstract class Product {
 	String title;
 	Person person;
 	
+	public Product(String title, Person person) {
+		this.title = title;
+		this.person = person;
+		this.id = IdGenerator.generate(this);
+	}
+
 	public String getTitle() {
 		return title;
 	}

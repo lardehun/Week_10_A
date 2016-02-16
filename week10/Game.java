@@ -8,7 +8,8 @@ public class Game extends Product implements Buyable{
 	int price;
 	
 	
-	public Game(boolean preOrder, List<Person> staff, int price) {
+	public Game(boolean preOrder, List<Person> staff, int price,String title,Person person) {
+		super(title,person);
 		this.preOrder = preOrder;
 		this.staff = staff;
 		this.price = price;
